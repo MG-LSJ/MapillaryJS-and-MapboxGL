@@ -96,7 +96,7 @@ body{
     border-bottom: 3em solid rgba(0,0,0,0.5);
     border-left: 3em solid transparent;
     border-top: 0px solid transparent;
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
 
 #mapillaryWindowToggleButtonIcon{
@@ -106,5 +106,5 @@ body{
     width: 3em;
     height: 3em;
     fill: #fff;
-    rotate: 45deg;
+    transform: rotate(45deg);
 }
