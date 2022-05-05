@@ -1,11 +1,44 @@
-#map {
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainWindow{
     position: absolute;
+    z-index: 0;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+.subWindow{
+    position: absolute;
+    bottom: 2.5em;
+    left: 2.5em;
+    width: 25em;
+    height: 15em;
+    z-index: 2;
+}
+
+#map {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+#imageWindow{
+    z-index: -1;
+}
+#mapillaryWindowToggle{
+    z-index: -1;
+    cursor: pointer
 }
 
 .mapillaryPopup .mapboxgl-popup-content{
@@ -25,25 +58,53 @@
     top: 0;
 }
 
+
+
 #mapillaryWindowDiv{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 2.5em;
-    left: 2.5em;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
     
 }
+
 #mapillaryWindow{
-    z-index: 1;
-    width: 25em;
-    height: 15em;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
     background: rgba(0,0,0);
 }
+
 #mapillaryWindowLoader {
+    mix-blend-mode: darken;
     display: none;
     position: absolute;
     width:5em; 
     z-index: 2;
+}
+
+#mapillaryWindowToggleButton {
+    position: absolute;
+    bottom: 14.91em;
+    left: 23.42em;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-right: 3em solid transparent;
+    border-bottom: 3em solid rgba(0,0,0,0.5);
+    border-left: 3em solid transparent;
+    border-top: 0px solid transparent;
+    rotate: 45deg;
+}
+
+#mapillaryWindowToggleButtonIcon{
+    position: absolute;
+    bottom: 14.6em;
+    left: 24.6em;
+    width: 3em;
+    height: 3em;
+    fill: #fff;
+    rotate: 45deg;
 }

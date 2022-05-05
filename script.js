@@ -1,6 +1,9 @@
-mapboxgl.accessToken = "YOUR ACCESS TOKEN HERE";
+mapboxgl.accessToken =
+    "pk.eyJ1Ijoia29yeXdrYSIsImEiOiJja2p1ajdlOWozMnF2MzBtajRvOTVzZDRpIn0.nnlX7TDuZ3zuGkZGr_oA3A";
+// This is a random Mapbox Access Token I found on the web. Use your own!
 
-mapillatyAccesToken = "YOUR ACCESS TOKEN HERE";
+mapillatyAccesToken = "MLY|7352363038169201|4e02e9cd8030a2fa229fb42825fb46bb";
+// Replace this with your own Mapillary API key
 
 const map = new mapboxgl.Map({
     container: "map", // container ID
@@ -183,7 +186,8 @@ var mapillaryViewer = new Viewer({
 });
 
 map.on("click", "mapillary-images", (e) => {
-    document.getElementById("mapillaryWindowDiv").style.zIndex = "1";
+    document.getElementById("imageWindow").style.zIndex = "1";
+    document.getElementById("mapillaryWindowToggle").style.zIndex = "2";
     mapillaryViewer.moveTo(e.features[0].properties.id);
 });
 
@@ -388,3 +392,11 @@ mapillaryViewer.on("dataloading", (event) => {
             "block";
     }
 });
+
+function toggleMapImageWindow() {
+    document.getElementById("mapWindow").classList.toggle("mainWindow");
+    document.getElementById("mapWindow").classList.toggle("subWindow");
+    document.getElementById("imageWindow").classList.toggle("mainWindow");
+    document.getElementById("imageWindow").classList.toggle("subWindow");
+    window.dispatchEvent(new Event("resize"));
+}
