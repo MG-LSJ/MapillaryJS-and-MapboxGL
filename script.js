@@ -13,6 +13,7 @@ const map = new mapboxgl.Map({
     style: "mapbox://styles/mapbox/streets-v11",
     cooperativeGestures: false,
     attributionControl: false,
+    projection: 'globe',
     hash: true,
     maxPitch: 45,
 });
