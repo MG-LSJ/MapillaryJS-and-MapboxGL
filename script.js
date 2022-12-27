@@ -10,7 +10,7 @@ const map = new mapboxgl.Map({
     center: [79.51, 29.1869],
     zoom: 14,
     pitch: 0,
-    style: "mapbox://styles/mapbox/streets-v11",
+    style: "mapbox://styles/mapbox/streets-v12",
     cooperativeGestures: false,
     attributionControl: false,
     projection: 'globe',
