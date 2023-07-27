@@ -6,4 +6,4 @@ Built using:
 
 I tired to recreate the mapillary.com/app using mapbox. 
 
-For the latest implementaion cheack my project https://github.com/Map-Haldwani/MapHaldwani
+For the latest implementaion check my project https://github.com/Map-Haldwani/MapHaldwani
