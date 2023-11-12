@@ -1,4 +1,4 @@
-# MapilaryJS-and-MapboxGL
+# MapilaryJS and MapboxGL
 
 Built using: 
 - Mapillary JS v4.1.1
